@@ -17,7 +17,7 @@ if [ "$hst" == "ifa" ]; then # JLAB cluster
     export CERN_INCLUDEDIR=${CERN_INC}
     export PATH=${CERN_BIN}:${PATH}
     export LD_LIBRARY_PATH=${CERN_LIB}:${LD_LIBRARY_PATH}
-if else # USM cluster
+else # USM cluster
     export CERN=${SOFT_DIR}/cernlib
     export CERN_LEVEL=2005
     export CERN_ROOT=${CERN}/${CERN_LEVEL}
