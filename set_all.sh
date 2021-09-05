@@ -6,8 +6,8 @@ echo "===================="
 export SOFT_DIR=${HOME}/software
 export ENV_DIR=${SOFT_DIR}/env_scripts
 
-echo ">>> SOFT_DIR           = ${SOFT_DIR}"
-echo ">>> ENV_DIR            = ${ENV_DIR}"
+echo ">>> SOFT_DIR            = ${SOFT_DIR}"
+echo ">>> ENV_DIR             = ${ENV_DIR}"
 
 array_of_programs=("cernlib clas mysql")
 
