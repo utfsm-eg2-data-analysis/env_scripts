@@ -1,7 +1,5 @@
 #!/bin/bash
 
-hst=${HOSTNAME:0:3}
-
 echo ""
 echo ">>> Setting MySQL"
 echo "================="

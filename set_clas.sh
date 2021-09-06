@@ -58,7 +58,7 @@ echo ""
 echo ">>> Setting recsis"
 echo "=================="
 
-if [ "$hst" == "ui0" ]; then # USM cluster
+if [ "$hst" == "ui0" || "${THIS_HOST}" == "ui0" ]; then # USM cluster
     export CLAS_PARMS=${SOFT_DIR}/simulations/parms # important
     export CLAS_CALDB_HOST=atlasusr.fis.utfsm.cl
     export CLAS_CALDB_USER=alaoui
@@ -66,7 +66,7 @@ if [ "$hst" == "ui0" ]; then # USM cluster
     export CLAS_CALDB_RUNINDEX="clas_calib.RunIndex"
     export RECSIS_RUNTIME=${SOFT_DIR}/simulations/clsrc/recsis/runtime # important
     export RECSIS=${CLAS_PACK}
-elif [ "$hst" == "ifa" ]; then # JLAB cluster
+elif [ "$hst" == "ifa" || "${THIS_HOST}" == "ifa" ]; then # JLAB cluster
     export CLAS_PARMS=/group/clas/parms # important
     export CLAS_CALDB_HOST=clasdb.jlab.org
     export CLAS_CALDB_USER=clasuser
