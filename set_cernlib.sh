@@ -6,7 +6,7 @@ echo "==================="
 
 hst=${HOSTNAME:0:3}
 
-if [ "$hst" == "ifa" || "${THIS_HOST}" == "ifa" ]; then # JLAB cluster
+if [[ "$hst" == "ifa" || "${THIS_HOST}" == "ifa" ]]; then # JLAB cluster
     export CERN=/apps/cernlib/x86_64_rhel8
     export CERN_LEVEL=2005
     export CERN_ROOT=${CERN}/${CERN_LEVEL}
