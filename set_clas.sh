@@ -68,7 +68,7 @@ if [[ "$hst" == "ui0" || "${THIS_HOST}" == "ui0" ]]; then # USM cluster
     export RECSIS=${CLAS_PACK}
 elif [[ "$hst" == "ifa" || "${THIS_HOST}" == "ifa" ]]; then # JLAB cluster
     export CLAS_PARMS=/group/clas/parms # important
-    export CLAS_CALDB_HOST=clasdb.jlab.org
+    export CLAS_CALDB_HOST=clasdb2021.jlab.org
     export CLAS_CALDB_USER=clasuser
     export CLAS_CALDB_DBNAME=calib
     export CLAS_CALDB_RUNINDEX="calib.RunIndex"
